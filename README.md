@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/1055/1055602.png" width="200" height="200" alt="icon">
+<img src="https://cdn-icons-png.flaticon.com/512/8644/8644474.png" width="180" height="180" alt="icon">
 </div>
 
 <h1 align="center">Portfolio Plus</h1>
@@ -37,6 +37,9 @@ pip install -r requirements.txt
 ```
 
 5. Run:
+```
+python3 manage.py runserver
+```
 -->
 # :hash: Database Management System
 

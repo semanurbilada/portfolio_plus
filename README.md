@@ -16,7 +16,7 @@ Welcome to my Portfolio Website (plus)! This started with the idea of Django CV 
 Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
 
 # :hash: How To Run?
-<!--- 1. Virtual environment setup:
+1. Virtual environment setup:
 ```
 python -m venv environment_name
 ```
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 python3 manage.py runserver
 ```
--->
+
 # :hash: Database Management System
 
 </p>

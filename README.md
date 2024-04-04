@@ -11,14 +11,14 @@
 <p align="justify">
 
 # :hash: Purpose
-Welcome to my Portfolio Website (plus)! This started with the idea of Django CV page project from the lecture of Advanced Web Programming combined with [existing frontend `portfolio-website`](https://github.com/semanurbilada/portfolio-website) project.
+Welcome to my Portfolio Website (plus)! Here is started with the idea of Django CV page project from the lecture of Advanced Web Programming, then combined with [existing frontend `portfolio-website`](https://github.com/semanurbilada/portfolio-website) project.
 
 Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
 
 # :hash: How To Run?
 1. Virtual environment setup:
 ```
-python -m venv environment_name
+python3 -m venv environment_name
 ```
 
 2. To activate the virtual environment (Windows):

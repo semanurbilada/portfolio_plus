@@ -8,8 +8,6 @@
 *  [:hash: How To Run?](#hash-how-to-run)
 *  [:hash: Database Management System](#hash-database-management-system)
 
-<p align="justify">
-
 # :hash: Purpose
 Welcome to my Portfolio Website (plus)! Here is started with the idea of Django CV page project from the lecture of Advanced Web Programming, then combined with [existing frontend `portfolio-website`](https://github.com/semanurbilada/portfolio-website) project.
 
@@ -35,12 +33,48 @@ source environment_name/bin/activate
 ```
 pip install -r requirements.txt
 ```
+or
+```
+pip3 install -r requirements.txt
+```
 
 5. Run:
+```
+python manage.py runserver
+```
+or
 ```
 python3 manage.py runserver
 ```
 
-# :hash: Database Management System
+## Docker Scripts:
+1. Build and run the app:
+```
+docker-compose up --build
+```
+or 
+```
+docker compose up --build
+```
 
-</p>
+2. Build and run the app in the background:
+```
+docker-compose up --build -d
+```
+
+3. See current runs with container IDs:
+```
+docker ps
+```
+
+4. Stop the run:
+```
+docker stop <container_id>
+```
+
+5. Stop and remove the run:
+```
+docker-compose stop <container_id>
+```
+
+# :hash: Database Management System

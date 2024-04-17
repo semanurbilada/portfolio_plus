@@ -1,19 +1,20 @@
+<h1 align="">Portfolio Plus</h1>
+
 <div align="center">
 <img src="https://cdn-icons-png.flaticon.com/512/8644/8644474.png" width="180" height="180" alt="icon">
 </div>
 
-<h1 align="center">Portfolio Plus</h1>
-
 *  [:hash: Purpose](#hash-purpose)
 *  [:hash: How To Run?](#hash-how-to-run)
+    *  [:hash: Docker Scripts](#hash-docker-scripts)
 *  [:hash: Database Management System](#hash-database-management-system)
 
-# :hash: Purpose
-Welcome to my Portfolio Website (plus)! Here is started with the idea of Django CV page project from the lecture of Advanced Web Programming, then combined with [existing frontend `portfolio-website`](https://github.com/semanurbilada/portfolio-website) project.
+## :hash: Purpose
+<div align="justify">
+Welcome to my Portfolio Website! Here is the Django CV page project for the lecture of Advanced Web Programming. Main purpose is the learning and practicing Django in backend applications. Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
+</div>
 
-Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
-
-# :hash: How To Run?
+## :hash: How To Run?
 1. Virtual environment setup:
 ```
 python3 -m venv environment_name
@@ -47,7 +48,7 @@ or
 python3 manage.py runserver
 ```
 
-## Docker Scripts:
+### :hash: Docker Scripts:
 1. Build and run the app:
 ```
 docker-compose up --build
@@ -77,4 +78,4 @@ docker stop <container_id>
 docker-compose stop <container_id>
 ```
 
-# :hash: Database Management System
+## :hash: Database Management System

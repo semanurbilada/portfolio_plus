@@ -1,0 +1,37 @@
+<nav class="border-dark">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a 
+                class="nav-link {% if request.resolver_match.url_name == 'index' %}
+                    active
+                {% endif %}" 
+                aria-current="page" 
+                href="/"
+            >
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a 
+                class="nav-link {% if request.resolver_match.url_name == '#' %}
+                    active
+                {% endif %}" 
+                href="#"
+            >
+                About
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a 
+                class="nav-link {% if request.resolver_match.url_name == 'contact' %}
+                    active
+                {% endif %}" 
+                href="/contact"
+            >
+                Contact
+            </a>
+        </li>
+    </ul>
+</nav>

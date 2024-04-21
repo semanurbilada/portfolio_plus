@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    {% include 'includes/head.html' with title="Contact" %}
+{% extends "layout.html" %}
 
-    <body>
-        <div class="container">
-            {% include 'includes/navbar.html' %}
-        </div>
-
-        <div class="container">
-            <h3>Contact Page!</h3>
-        </div>
-
-        {% block content %}
-        {% endblock %}
-    </body>
-</html>
+{% block content %}
+    
+    <h3>Contact Page!</h3>
+        
+{% endblock %}

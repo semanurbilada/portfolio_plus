@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    {% include 'includes/head.html' with title="Home" %}
+{% extends "layout.html" %}
 
-    <body>
-        <div class="container">
-            {% include 'includes/navbar.html' %}
-        </div>
+{% block content %}
 
-        {% block content %}
-        {% endblock %}
-    </body>
-</html>
+    <h3>Home Page!</h3>
+
+{% endblock %}

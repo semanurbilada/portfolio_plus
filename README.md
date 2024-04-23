@@ -1,4 +1,4 @@
-<h1 align="">Portfolio Plus</h1>
+<h1 align="">Portfolio Plus | Django CV Page</h1>
 
 <div align="center">
 <img src="https://cdn-icons-png.flaticon.com/512/8644/8644474.png" width="180" height="180" alt="icon">

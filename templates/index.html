@@ -1,82 +1,16 @@
 {% load static %}
 
 <!DOCTYPE html>
-    <html lang="en">
-<head>
-        <meta charset="utf-8">
-        <title>SB | Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Semanur Bilada Portfolio - Django CV Page">
-        <meta name="keywords" content="portfolio, django, cv page">
-        <meta content="Bootstraplily customized by Semanur Bilada" name="author">
-        <!-- favicon -->
-        <link rel="shortcut icon" href="{% get_media_prefix %}img/favicon.ico">
-        <!-- Bootstrap -->
-        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-        <!-- Lightbox -->
-        <link href="{% static 'css/tobii.min.css' %}" rel="stylesheet" type="text/css">
-        <!-- Icon -->
-        <link href="{% static 'css/materialdesignicons.min.css' %}" rel="stylesheet" type="text/css">
-        <!-- Custom Css -->
-        <link href="{% static 'css/style.min.css' %}" rel="stylesheet" type="text/css" id="theme-opt">
-        <link href="{% static 'css/colors/default.css' %}" rel="stylesheet" id="color-opt">
-    </head>
+<html lang="en">
+    {% include 'includes/head.html' with title="Home" %}
 
     <body>
         <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="logo">
-                    <img src="{% get_media_prefix %}img/logo.png" height="20" class="d-block mx-auto" alt="">
-                </div>
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
+        {% include 'includes/loader.html' %}
         <!-- Loader -->
         
         <!-- Navbar Start -->
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-    		<div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="{% get_media_prefix %}img/logo.png" class="l-dark" alt="">
-                    <img src="{% get_media_prefix %}img/logo-light.png" class="l-light" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span data-feather="menu" class="fea icon-md"></span>
-                </button><!--end button-->
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul id="navbar-navlist" class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li><!--end nav item-->
-                     
-                    </ul>
-
-                    <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon light-social-icon">
-                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                    </ul>
-                </div> 
-            </div><!--end container-->
-		</nav><!--end navbar-->
+        {% include 'includes/navbar.html' %}
         <!-- Navbar End -->
 
         <!-- HOME START-->
@@ -87,8 +21,9 @@
                     <div class="col-lg-12 text-center">
                         <div class="title-heading">
                             <img src="{% get_media_prefix %}img/home/hero.jpg" class="img-fluid rounded-circle" alt="">
-                            <h1 class="heading text-primary mt-3">Samual Murphy</h1>
-                            <h6 class="sub-title text-light">I Am <span class="typewrite text-white" data-period="2000" data-type='[ "Web Designer", "Web Developer", "Photographer"]'></span></h6>
+                            <h1 class="heading text-primary mt-3">Semanur Bilada</h1>
+                            <h6 class="text-light">Student of Information Systems Engineering</h6>
+                            <h5 class="sub-title text-light">I'm interested in <span class="typewrite text-white" data-period="2000" data-type='[ "R&D Research", "Web Technologies", "Robotics"]'!></span>!</h5>
                             <div class="mt-4">
                                 <a href="javascript:void(0)" class="btn btn-primary rounded">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
                             </div>
@@ -121,11 +56,10 @@
 
                     <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="section-title mb-0 ms-lg-5 ms-md-3">
-                            <h4 class="title text-primary mb-3">Samual Murphy</h4>
-                            <h6 class="designation mb-3">I'm a Passionate <span class="text-primary">Web Designer</span></h6>
-                            <p class="text-muted">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects. The as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            <p class="text-muted">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            <img src="{% get_media_prefix %}img/sign.png" height="22" alt="">
+                            <h4 class="title text-primary mb-3">Semanur Bilada</h4>
+                            <h6 class="designation mb-3">I'm an enthusiast of <span class="text-primary">Robotics and WEB</span></h6>
+                            <p class="text-muted">Information Systems Engineering student as 3rd year. Also; Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace. Actively involved in projects with these domains to improve my skills with teamwork.</p>
+                            <p class="text-muted">Research and Development is in my interest area; so, my goal is to learn and develop the professional aspects of projects and be creative for my personal improvement!</p>
                             <div class="mt-4">
                                 <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
                             </div>
@@ -133,7 +67,6 @@
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-
         </section>
         <!-- About end -->
             
@@ -150,7 +83,7 @@
                                     <div class="title-line"></div>
                                 </div>
                             </div>
-                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -162,7 +95,7 @@
                                 <i data-feather="airplay" class="fea icon-md"></i>
                             </div>
                             <div class="content mt-4">
-                                <h5 class="title">UX / UI Design</h5>
+                                <h5 class="title">Robotics</h5>
                                 <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
                             </div>
                             <div class="big-icon">
@@ -177,7 +110,7 @@
                                 <i data-feather="aperture" class="fea icon-md"></i>
                             </div>
                             <div class="content mt-4">
-                                <h5 class="title">Ios App Designer</h5>
+                                <h5 class="title">WEB Applications</h5>
                                 <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
                             </div>
                             <div class="big-icon">
@@ -192,7 +125,7 @@
                                 <i data-feather="camera" class="fea icon-md"></i>
                             </div>
                             <div class="content mt-4">
-                                <h5 class="title">Photography</h5>
+                                <h5 class="title">R&D Research</h5>
                                 <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
                             </div>
                             <div class="big-icon">
@@ -207,7 +140,7 @@
                                 <i data-feather="compass" class="fea icon-md"></i>
                             </div>
                             <div class="content mt-4">
-                                <h5 class="title">Graphic Designer</h5>
+                                <h5 class="title">Teamwork</h5>
                                 <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
                             </div>
                             <div class="big-icon">
@@ -222,7 +155,7 @@
                                 <i data-feather="settings" class="fea icon-md"></i>
                             </div>
                             <div class="content mt-4">
-                                <h5 class="title">Web Security</h5>
+                                <h5 class="title">Project Management</h5>
                                 <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
                             </div>
                             <div class="big-icon">
@@ -263,7 +196,7 @@
                                     <div class="title-line"></div>
                                 </div>
                             </div>
-                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -281,8 +214,8 @@
                                     </div><!--end col-->
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="event event-description-right rounded p-4 border float-left text-start">
-                                            <h5 class="title mb-0 text-capitalize">UX Designer</h5>
-                                            <small class="company">Vivo - Senior Designer</small>
+                                            <h5 class="title mb-0 text-capitalize">Student Assistant</h5>
+                                            <small class="company">Piri Reis University - Engineering Faculty</small>
                                             <p class="timeline-subtitle mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
                                         </div>
                                     </div><!--end col-->
@@ -293,8 +226,8 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
                                         <div class="event event-description-left rounded p-4 border float-left text-end">
-                                            <h5 class="title mb-0 text-capitalize">Web Developer</h5>
-                                            <small class="company">Oppo - HR Manager</small>
+                                            <h5 class="title mb-0 text-capitalize">Rising Star | Yükselen Yıldız</h5>
+                                            <small class="company">T3 Foundation - Scolarship Program</small>
                                             <p class="timeline-subtitle mt-3 mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.</p>
                                         </div>
                                     </div><!--end col-->
@@ -311,8 +244,8 @@
                                     </div><!--end col-->
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="event event-description-right rounded p-4 border float-left text-start">
-                                            <h5 class="title mb-0 text-capitalize">Graphic Designer</h5>
-                                            <small class="company">Apple - Testor</small>
+                                            <h5 class="title mb-0 text-capitalize">AI Team | Intern</h5>
+                                            <small class="company">Intellium - Intern</small>
                                             <p class="timeline-subtitle mt-3 mb-0 text-muted">Therefore always free from repetition, injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, </p>
                                         </div>
                                     </div><!--end col-->
@@ -339,7 +272,7 @@
                                     <div class="title-line"></div>
                                 </div>
                             </div>
-                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -351,10 +284,10 @@
                         <div class="filters-group">
                             <ul class="portfolioFilter list-inline mb-0 filter-options text-center">
                                 <li class="list-inline-item categories-name border text-dark px-3 rounded active" data-group="all">All</li>
-                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="branding">Branding</li>
-                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="designing">Designing</li>
-                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="photography">Photography</li>
-                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="development">Development</li>
+                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="branding">WEB Applications</li>
+                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="designing">Robotics</li>
+                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="photography">R&D Researches</li>
+                                <li class="list-inline-item categories-name border text-dark px-3 rounded" data-group="development">Civil Aviation</li>
                             </ul>
                         </div>
                     </div><!--end col-->
@@ -374,7 +307,7 @@
                             </div>
                             <div class="gallary-title py-4 text-center">
                                 <h5><a href="page-portfolio-detail.html" class="title text-dark">Working Keyboard</a></h5>
-                                <span>Branding</span>
+                                <span>WEB Applications</span>
                             </div>
                         </div>
                     </div>
@@ -391,7 +324,7 @@
                             </div>
                             <div class="gallary-title py-4 text-center">
                                 <h5><a href="page-portfolio-detail.html" class="title text-dark">The Micro Headphones</a></h5>
-                                <span>Development</span>
+                                <span>Civil Aviation</span>
                             </div>
                         </div>
                     </div>
@@ -408,7 +341,7 @@
                             </div>
                             <div class="gallary-title py-4 text-center">
                                 <h5><a href="page-portfolio-detail.html" class="title text-dark">The Coffee Cup</a></h5>
-                                <span>Designing</span>
+                                <span>Robotics</span>
                             </div>
                         </div>
                     </div>
@@ -425,7 +358,7 @@
                             </div>
                             <div class="gallary-title py-4 text-center">
                                 <h5><a href="page-portfolio-detail.html" class="title text-dark">The Wooden Desk</a></h5>
-                                <span>Photography</span>
+                                <span>R&D Researches</span>
                             </div>
                         </div>
                     </div>
@@ -459,7 +392,7 @@
                             </div>
                             <div class="gallary-title py-4 text-center">
                                 <h5><a href="page-portfolio-detail.html" class="title text-dark">Branded Laptop</a></h5>
-                                <span>Photoshop</span>
+                                <span>R&D Research</span>
                             </div>
                         </div>
                     </div>
@@ -481,7 +414,7 @@
                                     <div class="title-line"></div>
                                 </div>
                             </div>
-                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <p class="text-muted mx-auto para-desc mt-5 mb-0">Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -577,51 +510,17 @@
         <!-- Contact End -->
 
         <!-- Footer Start -->
-        <footer class="footer bg-dark">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <a href="#"><img src="{% get_media_prefix %}img/logo-light.png" alt=""></a>
-                        <p class="para-desc mx-auto mt-5">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                        <ul class="list-unstyled mb-0 mt-4 social-icon">
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-vimeo"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
-                        </ul>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </footer><!--end footer-->
-        <footer class="footer footer-bar bg-dark">
-            <div class="container text-foot text-center">
-                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Samual. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://Bootstraplily.com/" target="_blank" class="text-reset">Bootstraplily</a>.</p>
-            </div><!--end container-->
-        </footer><!--end footer-->
+        {% include 'includes/footer.html' %}
         <!-- Footer End -->
         
         <!-- Back to top -->
         <a href="#" onclick="topFunction()" class="back-to-top rounded text-center" id="back-to-top"> 
-            <i class="mdi mdi-chevron-up d-block"> </i> 
+            <i class="mdi mdi-chevron-up d-block"></i> 
         </a>
         <!-- Back to top -->
         
-
-        <!-- javascript -->
-        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-        <!-- Gumshoe -->
-        <script src="{% static 'js/gumshoe.js' %}"></script>
-        <!-- Lightbox -->
-        <script src="{% static 'js/tobii.min.js' %}"></script>
-        <script src="{% static 'js/shuffle.min.js' %}"></script>
-        <!-- Feather icon -->
-        <script src="{% static 'js/feather.min.js' %}"></script>
-        <!-- Typed -->
-        <script src="{% static 'js/typed.js' %}"></script>
-        <!-- Main Js -->
-        <script src="{% static 'js/plugins.init.js' %}"></script>
-        <script src="{% static 'js/app.js' %}"></script>
+        <!-- Scripts start -->
+        {% include 'includes/scripts.html' %}
+        <!-- Scripts end -->
     </body>
 </html>

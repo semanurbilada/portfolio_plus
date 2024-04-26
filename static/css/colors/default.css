@@ -10,7 +10,7 @@
 .pagination li a:hover,
 .pagination .active a,
 #preloader #status .spinner > div,
-.social-icon li a:hover,
+
 .back-to-top:hover,
 .section-title .title-line:after, 
 .section-title .title-line:before,
@@ -23,10 +23,10 @@
 .sidebar .widget .tagcloud > a:hover,
 .tns-nav button.tns-nav-active,
 .personal-hero:before {
-    background-color: #ab3ae0 !important;
+    background-color: #5356FF !important;
 }
 
-.text-primary,
+
 .btn-outline-primary,
 .page-next-level .page-next li a:hover,
 .navbar-custom .navbar-nav .nav-item .nav-link:hover, 
@@ -54,7 +54,7 @@
 .sidebar .widget .catagories li a:hover,
 .sidebar .widget .post-recent .post-recent-content a:hover,
 .comment-area .media-list .media .media-body a:hover {
-    color: #ab3ae0 !important;
+    color: #FFC000 !important;
 }
 
 .btn-primary,
@@ -68,12 +68,12 @@
 .nav-pills .nav-link.active,
 .pagination li a:hover,
 .pagination .active a,
-.social-icon li a:hover,
+
 .section-title .title-box:before, 
 .section-title .title-box:after,
 .owl-theme .owl-controls .owl-page span,
 .tns-nav button {
-    border-color: #ab3ae0 !important;
+    border-color: #5356FF !important;
 }
 
 a.text-primary:hover, 
@@ -86,8 +86,8 @@ a.text-primary:focus {
 .btn-primary:active, 
 .btn-primary.active, 
 .btn-primary.focus {
-    background-color: #7100c0 !important;
-    border-color: #7100c0 !important;
+    background-color: #378CE7 !important;
+    border-color: #378CE7 !important;
 }
 
 .bg-overlay-primary {

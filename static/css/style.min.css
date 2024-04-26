@@ -45,11 +45,11 @@ h6 {
 }
 
 .bg-primary {
-    background-color: #e54b4b !important
+    background-color: #5356FF !important
 }
 
 .text-primary {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 a.text-primary:hover,
@@ -365,7 +365,7 @@ small {
 #preloader #status .spinner>div {
     width: 18px;
     height: 18px;
-    background-color: #e54b4b;
+    background-color: #5356FF;
     border-radius: 5px;
     display: inline-block;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both
@@ -406,8 +406,8 @@ small {
 }
 
 .social-icon li a:hover {
-    background-color: #e54b4b;
-    border-color: #e54b4b !important;
+    background-color: #5356FF;
+    border-color: #5356FF !important;
     color: #fff !important
 }
 
@@ -436,7 +436,7 @@ small {
 }
 
 .back-to-top:hover {
-    background-color: #e54b4b;
+    background-color: #5356FF;
     color: #fff
 }
 
@@ -559,7 +559,7 @@ p {
 }
 
 .bg-primary-gradient-overlay {
-    background: linear-gradient(to bottom, rgba(229, 75, 75, 0) 0%, rgba(229, 75, 75, 0.25) 25%, rgba(229, 75, 75, 0.5) 50%, rgba(229, 75, 75, 0.75) 75%, #e54b4b 100%)
+    background: linear-gradient(to bottom, rgba(229, 75, 75, 0) 0%, rgba(229, 75, 75, 0.25) 25%, rgba(229, 75, 75, 0.5) 50%, rgba(229, 75, 75, 0.75) 75%, #5356FF 100%)
 }
 
 .title-heading .sub-title {
@@ -601,7 +601,7 @@ p {
     height: 16px;
     top: -7px;
     left: 2px;
-    border: 2px solid #e54b4b;
+    border: 2px solid #5356FF;
     border-radius: 30px 30px 30px 0;
     transform: rotate(45deg);
     left: calc(50% - 15px)
@@ -619,7 +619,7 @@ p {
     width: 30px;
     height: 2px;
     border-radius: 5px;
-    background-color: #e54b4b
+    background-color: #5356FF
 }
 
 .section-title .title-line:before {
@@ -718,7 +718,7 @@ p {
 .navbar-custom .navbar-nav .nav-item .nav-link:hover,
 .navbar-custom .navbar-nav .nav-item .nav-link.active,
 .navbar-custom .navbar-nav .nav-item .nav-link:active {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 .navbar-custom .navbar-nav .dropdown-toggle::after {
@@ -765,7 +765,7 @@ p {
 .navbar-custom .navbar-nav .dropdown .dropdown-item:hover,
 .navbar-custom .navbar-nav .dropdown .dropdown-item:focus {
     background-color: transparent;
-    color: #e54b4b
+    color: #5356FF
 }
 
 .navbar-custom .navbar-nav .dropdown:hover .dropdown-menu,
@@ -780,7 +780,7 @@ p {
 .navbar-custom .navbar-nav.navbar-nav-link .nav-item .nav-link:hover,
 .navbar-custom .navbar-nav.navbar-nav-link .nav-item .nav-link.active,
 .navbar-custom .navbar-nav.navbar-nav-link .nav-item .nav-link:active {
-    color: #e54b4b
+    color: #5356FF
 }
 
 .navbar-custom .navbar-nav .nav-item:last-child .nav-link {
@@ -833,7 +833,7 @@ p {
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:hover,
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link.active,
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:active {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 .nav-sticky.navbar-custom.sticky-light {
@@ -941,7 +941,7 @@ p {
 }
 
 .bg-home {
-    padding: 260px 0;
+    padding: 200px 0;
     background-size: cover;
     align-self: center;
     position: relative;
@@ -1015,7 +1015,7 @@ p {
     top: 0px;
     width: 70%;
     height: 100%;
-    background: #e54b4b none repeat scroll 0 0;
+    background: #5356FF none repeat scroll 0 0;
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%)
 }
 
@@ -1109,7 +1109,7 @@ p {
     left: 0;
     margin: 0 auto;
     border-radius: 50%;
-    background: #e54b4b
+    background: #5356FF
 }
 
 @media (max-width: 576px) {
@@ -1192,7 +1192,7 @@ p {
 }
 
 .interests-desc:hover .icon {
-    color: #e54b4b
+    color: #5356FF
 }
 
 .service-wrapper {
@@ -1239,11 +1239,11 @@ p {
 
 .service-wrapper:hover:after {
     width: 95%;
-    background-color: #e54b4b
+    background-color: #5356FF
 }
 
 .service-wrapper:hover .content .title {
-    color: #e54b4b
+    color: #5356FF
 }
 
 .service-wrapper:hover .big-icon {
@@ -1254,7 +1254,7 @@ p {
 .service-wrapper:hover .big-icon .icons {
     height: 200px;
     width: 200px;
-    color: #e54b4b
+    color: #5356FF
 }
 
 .main-icon {
@@ -1347,7 +1347,7 @@ p {
 }
 
 .timeline-page .timeline-item .event:hover .title {
-    color: #e54b4b
+    color: #5356FF
 }
 
 @media (min-width: 576px) {
@@ -1437,7 +1437,7 @@ p {
 .portfolioFilter li:hover,
 .portfolioFilter li.active {
     color: #fff !important;
-    background-color: #e54b4b;
+    background-color: #5356FF;
     cursor: pointer
 }
 
@@ -1481,7 +1481,7 @@ p {
 }
 
 .portfolio-box .portfolio-box-img .overlay-work .work-content .work-icon:hover {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 .portfolio-box .portfolio-box-img .overlay-work .work-content a:hover {
@@ -1498,7 +1498,7 @@ p {
 }
 
 .portfolio-box .gallary-title .title:hover {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 .portfolio-box:hover {
@@ -1546,7 +1546,7 @@ p {
 }
 
 .comment-area .media-list .d-flex .flex-1 a:hover {
-    color: #e54b4b !important
+    color: #5356FF !important
 }
 
 .comment-area .media-list .d-flex .flex-1 .media-heading,

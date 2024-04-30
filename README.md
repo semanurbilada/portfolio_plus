@@ -4,11 +4,16 @@
 <img src="https://cdn-icons-png.flaticon.com/512/8644/8644474.png" width="180" height="180" alt="icon">
 </div>
 
+*  [TO DO](#hash-todo)
 *  [Purpose](#hash-purpose)
+*  [Preview](#hash-preview)
 *  [How To Run?](#hash-how-to-run)
     *  [Docker Scripts](#hash-docker-scripts)
-*  [Preview](#hash-preview)
 *  [Database Management System](#hash-database-management-system)
+
+## :hash: TO DO
+- [ ] Contact app: frontend last 2 videos
+- [ ] Database models: all datas
 
 # :hash: Purpose
 <div align="justify">

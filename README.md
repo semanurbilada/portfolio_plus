@@ -12,13 +12,20 @@
 *  [Database Management System](#hash-database-management-system)
 
 ## :hash: TO DO
+- [ ] Frontend: customizations -> WIP
+- [ ] Database models: all datas -> WIP
 - [ ] Contact app: frontend last 2 videos
-- [ ] Database models: all datas
+- [x] Set up: project & github repo
+- [x] Frontend: bootstrap template
 
 # :hash: Purpose
 <div align="justify">
 Welcome to my Portfolio Website! Here is the Django CV page project for the lecture of Advanced Web Programming. Main purpose is the learning and practicing Django in backend applications. Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
 </div>
+
+
+# :hash: Preview
+
 
 # :hash: How To Run?
 1. Virtual environment setup:
@@ -93,8 +100,16 @@ docker stop <container_id>
 docker-compose stop <container_id>
 ```
 
-# :hash: Preview
+6. About migrations:
+- Create a new migration from models;
+```
+docker-compose run app python3 manage.py makemigrations 
+```
 
+- Apply migrations to database;
+```
+docker-compose run app python3 manage.py migrate
+```
 
 
 # :hash: Database Management System

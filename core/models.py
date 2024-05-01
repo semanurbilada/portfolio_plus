@@ -2,6 +2,27 @@ from django.db import models
 
 # Create your models here.
 
-
-#TODO: Database (models): no content just datas from database
-#TODO: Bootstrapt templates
+class GeneralSettings(models.Model):
+    name = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+    )
+    description = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+    )
+    parameters = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+    )
+    updated_date = models.DateTimeField(
+        blank=True,
+        auto_now=True,
+    )
+    created_date = models.DateTimeField(
+        blank=True,
+        auto_now_add=True,
+    )

@@ -20,7 +20,11 @@
 
 # :hash: Purpose
 <div align="justify">
-Welcome to my Portfolio Website! Here is the Django CV page project for the lecture of Advanced Web Programming. Main purpose is the learning and practicing Django in backend applications. Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
+Welcome to my Portfolio Website! Here is the Django CV page project for the technical lecture of Advanced Web Programming. Main purpose is the learning and practicing;<br>
+- Django in backend applications,<br>
+- Bootstrap which is a framework of CSS,<br>
+- Docker.<br>
+Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
 </div>
 
 
@@ -109,6 +113,11 @@ docker-compose run app python3 manage.py makemigrations
 - Apply migrations to database;
 ```
 docker-compose run app python3 manage.py migrate
+```
+
+6. Create superuser with docker:
+```
+docker-compose run app python3 manage.py createsuperuser
 ```
 
 

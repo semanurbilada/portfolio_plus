@@ -75,7 +75,7 @@ source deactivate
 ```
 
 ## :hash: Docker Scripts:
-1. Build and run the app:
+1. ```Build and run the app:```
 ```
 docker-compose up --build
 ```

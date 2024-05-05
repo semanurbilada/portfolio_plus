@@ -12,13 +12,13 @@
         {% include 'includes/navbar.html' %}
 
         <!-- HOME -->
-        <section class="bg-home" style="background-image:url('{% get_media_prefix %}img/home/04.jpg')" id="home">
+        <section class="bg-home" style="background-image:url('{{ home_bg.url }}')" id="home">
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="row mt-5 mt-sm-0 justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="title-heading">
-                            <img src="{% get_media_prefix %}img/home/hero.jpg" class="img-fluid rounded-circle" alt="">
+                            <img src="{{ home_profile.url }}" class="img-fluid rounded-circle" alt="">
                             <h1 class="heading text-primary mt-3">{{ site_title }}</h1>
                             <h6 class="text-light">Student of Information Systems Engineering</h6>
                             <h5 class="sub-title text-light">I'm interested in <span class="typewrite text-white" data-period="2000" data-type='[ "R&D Research", "Web Technologies", "Robotics"]'!></span>!</h5>
@@ -32,7 +32,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="home-shape">
-                        <img src="{% get_media_prefix %}img/shape.png" alt="" class="img-fluid mx-auto d-block">
+                        <img src="{{ home_shape.url }}" alt="" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-5">
                         <div class="about-hero">
-                            <img src="{% get_media_prefix %}img/hero.jpg" class="img-fluid mx-auto d-block about-tween position-relative rounded-3" alt="">
+                            <img src="{{ about.url }}" class="img-fluid mx-auto d-block about-tween position-relative rounded-3" alt="">
                         </div>
                     </div>
 
@@ -82,14 +82,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+                    </div>
+                </div>
 
                 <div class="row justify-content-center align-items-center">       
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content object-fit-cover">
-                                <img src="{% get_media_prefix %}img/01.jpg" class="w-50 h-auto"></img>
+                                <img src="{{ photo1.url }}" class="w-50 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/02.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo2.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/03.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo3.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/04.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo4.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content object-fit-cover">
-                                <img src="{% get_media_prefix %}img/05.jpg" class="w-75 h-auto"></img>
+                                <img src="{{ photo5.url }}" class="w-75 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/06.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo6.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/07.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo7.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                     <div class="col-md-4 col-12 mt-4 pt-2">
                         <div class="service-wrapper rounded position-relative text-center border border-footer">
                             <div class="content my-4 object-fit-cover">
-                                <img src="{% get_media_prefix %}img/08.jpg" class="w-100 h-auto"></img>
+                                <img src="{{ photo8.url }}" class="w-100 h-auto"></img>
                             </div>
                         </div>
                     </div>
@@ -453,8 +453,8 @@
                             </div>
                             <p class="text-muted mx-auto para-desc mt-5 mb-0">{{ about_preview }}</p>
                         </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+                    </div>
+                </div>
 
                 <div class="row justify-content-center">
                     <div class="col-md-5 mt-4 pt-2">

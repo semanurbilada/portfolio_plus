@@ -12,11 +12,11 @@
 *  [Database Management System](#hash-database-management-system)
 
 ## :hash: TO DO
-- [ ] Frontend: customizations -> WIP
 - [ ] Database models: all datas -> WIP
-- [ ] Contact app: frontend last 2 videos
-- [x] Set up: project & github repo
+- [ ] Contact app: frontend part last 2 step
+- [x] Frontend: customizations
 - [x] Frontend: bootstrap template
+- [x] Set up: django project & github repo
 
 # :hash: Purpose
 <div align="justify">

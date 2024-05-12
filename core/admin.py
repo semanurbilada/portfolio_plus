@@ -21,3 +21,13 @@ class ImageSettingAdmin(admin.ModelAdmin):
 
     class Meta:
         models = ImageSetting
+
+
+@admin.register(Experience)
+class ExperienceAdmin(admin.ModelAdmin):
+    list_display = ['id', 'company_name', 'job_title', 'job_description', 'job_period', 'start_date', 'end_date']
+    search_fields = ['id', 'company_name', 'job_title']
+    list_editable = ['company_name', 'job_title', 'job_description', 'job_period', 'start_date', 'end_date']
+
+    class Meta:
+        models = Experience

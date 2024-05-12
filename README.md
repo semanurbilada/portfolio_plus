@@ -13,7 +13,6 @@
 
 ## :hash: TO DO
 - [ ] Database models: all datas -> WIP
-- [ ] Contact app: frontend part last 2 step
 - [x] Frontend: customizations
 - [x] Frontend: bootstrap template
 - [x] Set up: django project & github repo
@@ -22,8 +21,8 @@
 <div align="justify">
 Welcome to my Portfolio Website! Here is the Django CV page project for the technical lecture of Advanced Web Programming. Main purpose is the learning and practicing;<br>
 - Django in backend applications,<br>
-- Bootstrap which is a framework of CSS,<br>
-- Docker.<br>
+- Docker container and enviroment,<br>
+- Bootstrap which is a framework of CSS.<br>
 Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
 </div>
 

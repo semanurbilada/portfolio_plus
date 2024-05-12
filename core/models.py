@@ -81,3 +81,48 @@ class ImageSetting(AbstractModel):
         verbose_name = ('Image Setting')
         verbose_name_plural = ('Image Settings')
         ordering = ('name', )
+
+
+class Experience(AbstractModel):
+    company_name = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Company Name',
+    )
+    job_title = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Job Title',
+    )
+    job_period = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Job Period',
+    )
+    job_description = models.CharField(
+        default='',
+        max_length=750,
+        blank=True,
+        verbose_name='Job Description',
+    )
+    start_date = models.DateField(
+        null=True,
+        verbose_name='Start Date', 
+    )
+    end_date = models.DateField(
+        default=None,
+        null=True,
+        blank=True,
+        verbose_name='End Date',
+    )
+
+    def __str__(self) -> str:
+        return f'Experience: {self.company_name}'
+
+    class Meta:
+        verbose_name = ('Experience')
+        verbose_name_plural = ('Experiences')
+        ordering = ('-start_date', )

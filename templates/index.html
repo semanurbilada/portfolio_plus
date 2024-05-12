@@ -178,49 +178,26 @@
                             <i data-feather="star" class="fea icon-md-sm"></i>
                         </div>
                         <div class="timeline-page pt-2 position-relative">
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 ps-4 pe-4 position-relative shadow text-start">Dec 2023 - Present · 5 Months</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="event event-description-right rounded p-4 border float-left text-start">
-                                            <h5 class="title mb-0 text-capitalize">Student Assistant</h5>
-                                            <small class="company">Piri Reis University - Engineering Faculty</small>
+                            {% for experience in experiences %}
+                                <div class="timeline-item mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
+                                            <div class="event event-description-left rounded p-4 border float-left text-end">
+                                                <h5 class="title mb-0 text-capitalize">{{ experience.job_title }}</h5>
+                                                <small class="company">{{ experience.company_name }}</small>
+                                                <p class="timeline-subtitle mt-3 mb-0 text-muted">{{ experience.job_description }}</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
+                                            <div 
+                                                class="duration duration-right rounded border p-2 ps-4 pe-4 position-relative shadow text-start"
+                                            >
+                                                {{ experience.start_date }} - {{ experience.end_date }} ·  {{ experience.job_period }}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-            
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
-                                        <div class="event event-description-left rounded p-4 border float-left text-end">
-                                            <h5 class="title mb-0 text-capitalize">Rising Star | Yükselen Yıldız</h5>
-                                            <small class="company">T3 Foundation - Scholarship Program</small>
-                                            <p class="timeline-subtitle mt-3 mb-0 text-muted">100 university students who have the potential to become technology leaders have been selected for this scholarship program by the T3 Foundation every ten-month period.<br>I had to chance to contribute:<br>Front-End: Information Technologies Coordination Office<br>Researching Civil Aerospace: Member of the Defense, Aerospace Technologies Committee<br>Also, various project ideas were developed and network chances with the ecosystem of National Technology Move (Milli Teknoloji Hamlesi) in the sector, as personal improvement.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
-                                        <div class="duration duration-right rounded border p-2 ps-4 pe-4 position-relative shadow text-start">Feb 2023 - Nov 2023 · 10 Months</div>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 ps-4 pe-4 position-relative shadow text-start">Jul 2023 - Aug 2023 · 2 Months</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="event event-description-right rounded p-4 border float-left text-start">
-                                            <h5 class="title mb-0 text-capitalize">AI Team | Intern</h5>
-                                            <small class="company">Intellium - Summer Intern</small>
-                                            <p class="timeline-subtitle mt-3 mb-0 text-muted">Developed AI side of a Full-Stack Project using Keras, Tensorflow and Python in concept of NLP applications. Also, experienced in Project Management and Trello.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -439,7 +416,7 @@
         <!-- Projects End -->
 
         <!-- Contact Start -->
-        <section class="section pb-0" id="contact">
+        <section class="section py-10" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -480,52 +457,6 @@
                                 <p class="text-muted">Eager to explore new career pathways & Passionate about making a positive impact!</p>
                                 <a href="mailto:contact@example.com" class="text-primary">semanurbilada@gmail.com</a>
                             </div>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section pt-5 mt-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="custom-form mb-sm-30">
-                            <form method="post" name="myForm" onsubmit="return validateForm()">
-                                <p id="error-msg"></p>
-                                <div id="simple-msg"></div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-6">
-                                                <div class="form-group">
-                                                    <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name :">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-6">
-                                                <div class="form-group">
-                                                    <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email :">
-                                                </div> 
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject :">
-                                                </div>                                                                               
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 text-end">
-                                        <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>

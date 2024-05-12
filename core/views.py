@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import GeneralSetting, ImageSetting
+from core.models import GeneralSetting, ImageSetting, Experience
 
 # Create your views here.
 # View as function but use views as Classes!
@@ -56,12 +56,28 @@ def index(request):
     header_logo = header_logo_setting.file
     header_logo_light = header_logo_light_setting.file
 
+
+    # Experience:
+    experiences = Experience.objects.all()
+    
+    # Experiences: define variables
+    # job_title_setting = Experience.objects.get(company_name='job_title')
+    # company_name_setting = Experience.objects.get(company_name='company_name')
+    # job_date_setting = Experience.objects.get(company_name='job_date')
+    # job_description_setting = Experience.objects.get(company_name='job_description')
+    # # Experiences: parameters
+    # job_title = job_title_setting.company_name
+    # company_name = company_name_setting.company_name
+    # job_date = job_date_setting.company_name
+    # job_description = job_description_setting.company_name
+
     context = {
+        # general settings:
         'site_title': site_title, 
         'site_keywords': site_keywords, 
         'about_preview': about_preview, 
 
-        # images:
+        # images settings:
         'home_bg': home_bg,
         'home_shape': home_shape,
         'home_profile': home_profile,
@@ -80,6 +96,9 @@ def index(request):
         'site_favicon': site_favicon,
         'header_logo': header_logo,
         'header_logo_light': header_logo_light,
+
+        #experiences:
+        'experiences': experiences,
     }
 
     return render(request, 'index.html', context=context)

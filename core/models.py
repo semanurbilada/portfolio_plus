@@ -126,3 +126,42 @@ class Experience(AbstractModel):
         verbose_name = ('Experience')
         verbose_name_plural = ('Experiences')
         ordering = ('-start_date', )
+
+
+class About(models.Model):
+    about_title = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='About Title',
+    )
+    about_title_colored = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='About Title Colored',
+    )
+    about_content_1 = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='About Content 1',
+    )
+    about_content_2 = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='About Content 2',
+    )
+    about_button = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='About Button',
+    )
+
+    def __str__(self) -> str:
+        return f'About: {self.about_title}'
+
+    class Meta:
+        verbose_name = ('About')

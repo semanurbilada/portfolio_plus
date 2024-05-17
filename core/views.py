@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import GeneralSetting, ImageSetting, Experience
+from core.models import GeneralSetting, ImageSetting, Experience, About
 
 # Create your views here.
 # View as function but use views as Classes!
@@ -71,6 +71,9 @@ def index(request):
     # job_date = job_date_setting.company_name
     # job_description = job_description_setting.company_name
 
+    # About:
+    about_sections = About.objects.all()
+
     context = {
         # general settings:
         'site_title': site_title, 
@@ -99,6 +102,9 @@ def index(request):
 
         #experiences:
         'experiences': experiences,
+
+        #about:
+        'about_sections': about_sections,
     }
 
     return render(request, 'index.html', context=context)

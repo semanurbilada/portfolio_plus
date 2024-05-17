@@ -31,3 +31,13 @@ class ExperienceAdmin(admin.ModelAdmin):
 
     class Meta:
         models = Experience
+
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ['id', 'about_title', 'about_title_colored', 'about_content_1', 'about_content_2', 'about_button']
+    search_fields = ['id', 'about_title', 'about_title_colored']
+    list_editable = ['about_title', 'about_title_colored', 'about_content_1', 'about_content_2', 'about_button']
+
+    class Meta:
+        model = About

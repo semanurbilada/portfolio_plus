@@ -52,17 +52,19 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title mb-0 ms-lg-5 ms-md-3">
-                            <h4 class="title text-primary mb-3">{{ site_title }}</h4>
-                            <h6 class="designation mb-3">I'm an enthusiast of <span class="text-primary">Robotics and WEB</span></h6>
-                            <p class="text-muted">Information Systems Engineering student as 3rd year. Also; Head of the Piri Reis University Robot Club, overseeing project management for school projects. Experienced and passionate about WEB Applications, Robotics, and Aerospace. Actively involved in projects with these domains to improve my skills with teamwork.</p>
-                            <p class="text-muted">Research and Development is in my interest area; so, my goal is to learn and develop the professional aspects of projects and be creative for my personal improvement!</p>
-                            <div class="mt-4">
-                                <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
+                    {% for about in about_sections %}
+                        <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                            <div class="section-title mb-0 ms-lg-5 ms-md-3">
+                                <h4 class="title text-primary mb-3">{{ site_title }}</h4>
+                                <h6 class="designation mb-3">{{ about.about_title }} <span class="text-primary">{{ about.about_title_colored }}</span></h6>
+                                <p class="text-muted">{{ about.about_content_1 }}</p>
+                                <p class="text-muted">{{ about.about_content_2 }}</p>
+                                <div class="mt-4">
+                                    <a href="#projects" class="btn btn-primary mouse-down">{{ about.about_button }}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>

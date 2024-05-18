@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import GeneralSetting, ImageSetting, Experience, About
+from core.models import GeneralSetting, ImageSetting, Experience, About, Project
 
 # Create your views here.
 # View as function but use views as Classes!
@@ -74,6 +74,11 @@ def index(request):
     # About:
     about_sections = About.objects.all()
 
+    # Projects:
+    projects = Project.objects.all()
+    # extract categories and data groups from projects
+    categories = {(project.project_category, project.data_groups) for project in projects}
+
     context = {
         # general settings:
         'site_title': site_title, 
@@ -105,6 +110,10 @@ def index(request):
 
         #about:
         'about_sections': about_sections,
+
+        #projects:
+        'projects': projects,
+        'categories': categories,
     }
 
     return render(request, 'index.html', context=context)

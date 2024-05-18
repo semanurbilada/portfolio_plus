@@ -9,7 +9,6 @@
 *  [Preview](#hash-preview)
 *  [How To Run?](#hash-how-to-run)
     *  [Docker Scripts](#hash-docker-scripts)
-*  [Database Management System](#hash-database-management-system)
 
 ## :hash: TO DO
 - [ ] Database models: all datas -> WIP
@@ -118,6 +117,3 @@ docker-compose run app python3 manage.py migrate
 ```
 docker-compose run app python3 manage.py createsuperuser
 ```
-
-
-# :hash: Database Management System

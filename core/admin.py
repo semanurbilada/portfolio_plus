@@ -41,3 +41,9 @@ class AboutAdmin(admin.ModelAdmin):
 
     class Meta:
         model = About
+
+@admin.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
+    list_display = ['id', 'project_title', 'project_category', 'project_link', 'project_description', 'data_groups']
+    search_fields = ['id', 'project_title', 'project_category']
+    list_editable = ['project_title', 'project_category', 'project_link', 'project_description', 'data_groups']

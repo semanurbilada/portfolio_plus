@@ -165,3 +165,34 @@ class About(models.Model):
 
     class Meta:
         verbose_name = ('About')
+
+
+class Project(models.Model):
+    CATEGORY_CHOICES = [
+        ('education', 'Education'),
+        ('research', 'R&D Researches'),
+        ('licences', 'Licences & Certifications'),
+        ('github', 'GitHub'),
+    ]
+
+    project_title = models.CharField(
+        max_length=255
+    )
+    project_link = models.URLField()
+    project_description = models.CharField(
+        max_length=255, 
+    )
+    project_category = models.CharField(
+        max_length=50, 
+        choices=CATEGORY_CHOICES
+    )
+    data_groups = models.CharField(
+        max_length=255
+    ) 
+
+    def __str__(self):
+        return self.project_title
+    
+    class Meta:
+        verbose_name = ('Project')
+        verbose_name_plural = ('Projects')

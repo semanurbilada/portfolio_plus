@@ -7,13 +7,43 @@ from core.models import GeneralSetting, ImageSetting, Experience, About, Project
 def index(request):
     # General Settings: define variables
     site_title_setting = GeneralSetting.objects.get(name='site_title')
+    site_content_setting = GeneralSetting.objects.get(name='site_content')
+    home_title_setting = GeneralSetting.objects.get(name='home_title')
+    home_text_setting = GeneralSetting.objects.get(name='home_text')
+    home_button_setting = GeneralSetting.objects.get(name='home_button')
     site_keywords_setting = GeneralSetting.objects.get(name='site_keywords')
     about_preview_setting = GeneralSetting.objects.get(name='about_preview')
+    photos_title_setting = GeneralSetting.objects.get(name='photos_title')
+    contact_title_setting = GeneralSetting.objects.get(name='contact_title')
+    projects_title_setting = GeneralSetting.objects.get(name='projects_title')
+    experience_title_setting = GeneralSetting.objects.get(name='experience_title')
+
+    nav_link_1_setting = GeneralSetting.objects.get(name='nav_link_1')
+    nav_link_2_setting = GeneralSetting.objects.get(name='nav_link_2')
+    nav_link_3_setting = GeneralSetting.objects.get(name='nav_link_3')
+    nav_link_4_setting = GeneralSetting.objects.get(name='nav_link_4')
+    nav_link_5_setting = GeneralSetting.objects.get(name='nav_link_5')
+    nav_link_6_setting = GeneralSetting.objects.get(name='nav_link_6')
 
     # General Settings: parameters
     site_title = site_title_setting.parameters
+    site_content = site_content_setting.parameters
+    home_title = home_title_setting.parameters
+    home_text = home_text_setting.parameters
+    home_button = home_button_setting.parameters
     site_keywords = site_keywords_setting.parameters
     about_preview = about_preview_setting.parameters
+    photos_title = photos_title_setting.parameters
+    contact_title = contact_title_setting.parameters
+    projects_title = projects_title_setting.parameters
+    experience_title = experience_title_setting.parameters
+
+    nav_link_1 = nav_link_1_setting.parameters
+    nav_link_2 = nav_link_2_setting.parameters
+    nav_link_3 = nav_link_3_setting.parameters
+    nav_link_4 = nav_link_4_setting.parameters
+    nav_link_5 = nav_link_5_setting.parameters
+    nav_link_6 = nav_link_6_setting.parameters
 
 
     # Image Settings: define variables
@@ -56,20 +86,8 @@ def index(request):
     header_logo = header_logo_setting.file
     header_logo_light = header_logo_light_setting.file
 
-
     # Experience:
     experiences = Experience.objects.all()
-    
-    # Experiences: define variables
-    # job_title_setting = Experience.objects.get(company_name='job_title')
-    # company_name_setting = Experience.objects.get(company_name='company_name')
-    # job_date_setting = Experience.objects.get(company_name='job_date')
-    # job_description_setting = Experience.objects.get(company_name='job_description')
-    # # Experiences: parameters
-    # job_title = job_title_setting.company_name
-    # company_name = company_name_setting.company_name
-    # job_date = job_date_setting.company_name
-    # job_description = job_description_setting.company_name
 
     # About:
     about_sections = About.objects.all()
@@ -82,8 +100,23 @@ def index(request):
     context = {
         # general settings:
         'site_title': site_title, 
+        'site_content': site_content, 
+        'home_title': home_title,
+        'home_text': home_text,
+        'home_button': home_button,
         'site_keywords': site_keywords, 
         'about_preview': about_preview, 
+        'photos_title': photos_title,
+        'projects_title': projects_title,
+        'contact_title': contact_title,
+        'experience_title': experience_title,
+        
+        'nav_link_1': nav_link_1,
+        'nav_link_2': nav_link_2,
+        'nav_link_3': nav_link_3,
+        'nav_link_4': nav_link_4,
+        'nav_link_5': nav_link_5,
+        'nav_link_6': nav_link_6,
 
         # images settings:
         'home_bg': home_bg,

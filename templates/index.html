@@ -20,10 +20,10 @@
                         <div class="title-heading">
                             <img src="{{ home_profile.url }}" class="img-fluid rounded-circle" alt="">
                             <h1 class="heading text-primary mt-3">{{ site_title }}</h1>
-                            <h6 class="text-light">Student of Information Systems Engineering</h6>
-                            <h5 class="sub-title text-light">I'm interested in <span class="typewrite text-white" data-period="2000" data-type='[ "R&D Research", "Web Technologies", "Robotics"]'!></span>!</h5>
+                            <h6 class="text-light">{{ home_title }}</h6>
+                            <h5 class="sub-title text-light">{{ home_text }}<span class="typewrite text-white" data-period="2000" data-type='[ " R&D Research", " Web Technologies", " Robotics"]'!></span>!</h5>
                             <div class="mt-4">
-                                <a href="javascript:void(0)" class="btn btn-primary rounded">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
+                                <a href="javascript:void(0)" class="btn btn-primary rounded">{{ home_button }} <i data-feather="download" class="fea icon-sm"></i></a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <div class="position-relative">
-                                <h4 class="title text-uppercase mb-4">Photo Gallery</h4>
+                                <h4 class="title text-uppercase mb-4">{{ photos_title }}</h4>
                                 <div>
                                     <div class="title-box"></div>
                                     <div class="title-line"></div>
@@ -163,7 +163,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <div class="position-relative">
-                                <h4 class="title text-uppercase mb-4">Work Experience</h4>
+                                <h4 class="title text-uppercase mb-4">{{ experience_title }}</h4>
                                 <div>
                                     <div class="title-box"></div>
                                     <div class="title-line"></div>
@@ -191,10 +191,14 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
-                                            <div 
-                                                class="duration duration-right rounded border p-2 ps-4 pe-4 position-relative shadow text-start"
-                                            >
-                                                {{ experience.start_date }} - {{ experience.end_date }} ·  {{ experience.job_period }}
+                                            <div class="duration duration-right rounded border p-2 ps-4 pe-4 position-relative shadow text-start">
+                                                {{ experience.start_date|date:"M Y" }} - 
+                                                {% if experience.end_date %}
+                                                    {{ experience.end_date|date:"M Y" }}
+                                                {% else %}
+                                                    Present
+                                                {% endif %} 
+                                                · {{ experience.job_period }}
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +218,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <div class="position-relative">
-                                <h4 class="title text-uppercase mb-4">My Portfolio</h4>
+                                <h4 class="title text-uppercase mb-4">{{ projects_title }}</h4>
                                 <div>
                                     <div class="title-box"></div>
                                     <div class="title-line"></div>
@@ -263,7 +267,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <div class="position-relative">
-                                <h4 class="title text-uppercase mb-4">Contact Me</h4>
+                                <h4 class="title text-uppercase mb-4">{{ contact_title }}</h4>
                                 <div>
                                     <div class="title-box"></div>
                                     <div class="title-line"></div>

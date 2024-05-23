@@ -27,7 +27,16 @@ Take a look at my learning journey for Django & Bootstrap & Docker; and feel fre
 
 
 # :hash: Preview
+<div align="center">
+   
+![Screenshot 2024-05-24 at 2 38 18 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/9fbbff0a-2b67-4d64-8021-2ae1a06ce282)
+![Screenshot 2024-05-24 at 2 38 26 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/cf75919e-3b24-4cb3-bef1-db4bf75e22fd)
+![Screenshot 2024-05-24 at 2 38 39 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/c019b20a-ec92-411e-86d2-a0da4d5c221f)
+![Screenshot 2024-05-24 at 2 38 46 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/c7f48401-8ed0-42ef-b804-e01941d63ff9)
+![Screenshot 2024-05-24 at 2 38 57 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/232b8e0f-5538-4ccb-a8cb-8fb95544eb50)
+![Screenshot 2024-05-24 at 2 39 03 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/27d1fac1-5b2b-4a19-992f-209a33c06108)
 
+</div>
 
 # :hash: How To Run?
 1. Virtual environment setup:

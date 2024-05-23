@@ -7,6 +7,7 @@ from core.models import GeneralSetting, ImageSetting, Experience, About, Project
 def index(request):
     # General Settings: define variables
     site_title_setting = GeneralSetting.objects.get(name='site_title')
+    favicon_title_setting = GeneralSetting.objects.get(name='favicon_title')
     site_content_setting = GeneralSetting.objects.get(name='site_content')
     site_description_setting = GeneralSetting.objects.get(name='site_description')
     home_title_setting = GeneralSetting.objects.get(name='home_title')
@@ -36,6 +37,7 @@ def index(request):
 
     # General Settings: parameters
     site_title = site_title_setting.parameters
+    favicon_title = favicon_title_setting.parameters
     site_content = site_content_setting.parameters
     site_description = site_description_setting.parameters
     home_title = home_title_setting.parameters
@@ -120,6 +122,7 @@ def index(request):
     context = {
         # general settings:
         'site_title': site_title, 
+        'favicon_title': favicon_title,
         'site_content': site_content, 
         'site_description': site_description, 
         'home_title': home_title,

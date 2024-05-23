@@ -11,9 +11,9 @@
     *  [Docker Scripts](#hash-docker-scripts)
 
 ## :hash: TO DO
-- [ ] Database models: all datas -> WIP
 - [x] Frontend: customizations
 - [x] Frontend: bootstrap template
+- [x] Database models: all datas 
 - [x] Set up: django project & github repo
 
 # :hash: Purpose
@@ -22,7 +22,7 @@ Welcome to my Portfolio Website! Here is the Django CV page project for the tech
 - Django in backend applications,<br>
 - Docker container and enviroment,<br>
 - Bootstrap which is a framework of CSS.<br>
-Still in progress, and there are lots of aspect to be waiting for developing. Stay Tuned!
+Take a look at my learning journey for Django & Bootstrap & Docker; and feel free to send feedback!
 </div>
 
 

@@ -8,6 +8,7 @@ def index(request):
     # General Settings: define variables
     site_title_setting = GeneralSetting.objects.get(name='site_title')
     site_content_setting = GeneralSetting.objects.get(name='site_content')
+    site_description_setting = GeneralSetting.objects.get(name='site_description')
     home_title_setting = GeneralSetting.objects.get(name='home_title')
     home_text_setting = GeneralSetting.objects.get(name='home_text')
     home_button_setting = GeneralSetting.objects.get(name='home_button')
@@ -25,9 +26,18 @@ def index(request):
     nav_link_5_setting = GeneralSetting.objects.get(name='nav_link_5')
     nav_link_6_setting = GeneralSetting.objects.get(name='nav_link_6')
 
+    content_title_tel_setting = GeneralSetting.objects.get(name='content_title_tel')
+    content_text_tel_setting = GeneralSetting.objects.get(name='content_text_tel')
+    content_label_tel_setting = GeneralSetting.objects.get(name='content_label_tel')
+    footer_label_setting = GeneralSetting.objects.get(name='footer_label')
+    content_title_mail_setting = GeneralSetting.objects.get(name='content_title_mail')
+    content_text_mail_setting = GeneralSetting.objects.get(name='content_text_mail')
+    content_label_mail_setting = GeneralSetting.objects.get(name='content_label_mail')
+
     # General Settings: parameters
     site_title = site_title_setting.parameters
     site_content = site_content_setting.parameters
+    site_description = site_description_setting.parameters
     home_title = home_title_setting.parameters
     home_text = home_text_setting.parameters
     home_button = home_button_setting.parameters
@@ -45,6 +55,13 @@ def index(request):
     nav_link_5 = nav_link_5_setting.parameters
     nav_link_6 = nav_link_6_setting.parameters
 
+    content_title_tel = content_title_tel_setting.parameters
+    content_text_tel = content_text_tel_setting.parameters
+    content_label_tel = content_label_tel_setting.parameters
+    footer_label = footer_label_setting.parameters
+    content_title_mail = content_title_mail_setting.parameters
+    content_text_mail = content_text_mail_setting.parameters
+    content_label_mail = content_label_mail_setting.parameters
 
     # Image Settings: define variables
     home_bg_setting = ImageSetting.objects.get(name='home_bg')
@@ -104,6 +121,7 @@ def index(request):
         # general settings:
         'site_title': site_title, 
         'site_content': site_content, 
+        'site_description': site_description, 
         'home_title': home_title,
         'home_text': home_text,
         'home_button': home_button,
@@ -120,6 +138,14 @@ def index(request):
         'nav_link_4': nav_link_4,
         'nav_link_5': nav_link_5,
         'nav_link_6': nav_link_6,
+
+        'content_title_tel': content_title_tel,
+        'content_text_tel': content_text_tel,
+        'content_label_tel': content_label_tel,
+        'footer_label': footer_label,
+        'content_title_mail': content_title_mail,
+        'content_text_mail': content_text_mail,
+        'content_label_mail': content_label_mail,
 
         # images settings:
         'home_bg': home_bg,
@@ -154,7 +180,6 @@ def index(request):
         #documents:
         'document': document,
     }
-
     return render(request, 'index.html', context=context)
 
 

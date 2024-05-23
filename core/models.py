@@ -196,3 +196,37 @@ class Project(models.Model):
     class Meta:
         verbose_name = ('Project')
         verbose_name_plural = ('Projects')
+
+
+class Document(AbstractModel):
+    order = models.IntegerField(
+        default=0,
+        verbose_name='Order'
+    )
+    slug = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Slug',
+    )
+    button_text = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Button Text',
+    )
+    file = models.FileField(
+        default='',
+        blank=True,
+        verbose_name='Image',
+        help_text='',
+        upload_to='documents/'
+    )
+
+    def __str__(self) -> str:
+        return f'Document: {self.slug}'
+
+    class Meta:
+        verbose_name = ('Document')
+        verbose_name_plural = ('Documents')
+        ordering = ('order', )

@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from core.models import GeneralSetting, ImageSetting, Experience, About, Project
+from django.shortcuts import render, redirect, get_object_or_404
+from core.models import GeneralSetting, ImageSetting, Experience, About, Project, Document
 
 # Create your views here.
 # View as function but use views as Classes!
@@ -92,6 +92,9 @@ def index(request):
     # About:
     about_sections = About.objects.all()
 
+    # Document:
+    document = Document.objects.first()
+
     # Projects:
     projects = Project.objects.all()
     # extract categories and data groups from projects
@@ -147,9 +150,14 @@ def index(request):
         #projects:
         'projects': projects,
         'categories': categories,
+
+        #documents:
+        'document': document,
     }
 
     return render(request, 'index.html', context=context)
 
-# def contact(request):
-#     return render(request, 'contact.html')
+
+def redirect_urls(slug):
+    document = get_object_or_404(Document, slug=slug)
+    return redirect(document.file.url)

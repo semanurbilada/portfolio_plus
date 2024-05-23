@@ -47,3 +47,16 @@ class ProjectAdmin(admin.ModelAdmin):
     list_display = ['id', 'project_title', 'project_category', 'project_link', 'project_description', 'data_groups']
     search_fields = ['id', 'project_title', 'project_category']
     list_editable = ['project_title', 'project_category', 'project_link', 'project_description', 'data_groups']
+
+    class Meta:
+        model = Project
+
+
+@admin.register(Document)
+class DocumentAdmin(admin.ModelAdmin):
+    list_display = ['id', 'order', 'slug', 'button_text', 'file']
+    search_fields =['id', 'slug', 'button_text']
+    list_editable = ['order', 'slug', 'button_text', 'file']
+
+    class Meta:
+        model = Document

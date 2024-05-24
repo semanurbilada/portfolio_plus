@@ -5,6 +5,7 @@ from core.models import GeneralSetting, ImageSetting, Experience, About, Project
 # View as function but use views as Classes!
 
 def index(request):
+    
     # General Settings: define variables
     site_title_setting = GeneralSetting.objects.get(name='site_title')
     favicon_title_setting = GeneralSetting.objects.get(name='favicon_title')

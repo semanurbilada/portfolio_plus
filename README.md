@@ -1,7 +1,7 @@
 <h1 align="">Portfolio Plus | Django CV Page</h1>
 
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/8644/8644474.png" width="180" height="180" alt="icon">
+    <img src="https://img.icons8.com/?size=100&id=FnTmHRua3mU3&format=png&color=000000" alt="icon">
 </div>
 
 *  [TO DO](#hash-todo)
@@ -10,11 +10,14 @@
 *  [How To Run?](#hash-how-to-run)
     *  [Docker Scripts](#hash-docker-scripts)
 
+
 ## :hash: TO DO
 - [x] Frontend: customizations
-- [x] Frontend: bootstrap template
 - [x] Database models: all datas 
+- [x] Set up: docker environment
+- [x] Frontend: bootstrap template
 - [x] Set up: django project & github repo
+
 
 # :hash: Purpose
 <div align="justify">
@@ -37,6 +40,7 @@ Take a look at my learning journey for Django & Bootstrap & Docker; and feel fre
 ![Screenshot 2024-05-24 at 2 39 03 AM](https://github.com/semanurbilada/portfolio_plus/assets/96194982/27d1fac1-5b2b-4a19-992f-209a33c06108)
 
 </div>
+
 
 # :hash: How To Run?
 1. Virtual environment setup:
@@ -122,7 +126,7 @@ docker-compose run app python3 manage.py makemigrations
 docker-compose run app python3 manage.py migrate
 ```
 
-6. Create superuser with docker:
+7. Create superuser with docker:
 ```
 docker-compose run app python3 manage.py createsuperuser
 ```

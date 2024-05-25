@@ -1,8 +1,8 @@
-<h1 align="">Portfolio Plus | Django CV Page</h1>
-
 <div align="center">
     <img src="https://img.icons8.com/?size=100&id=FnTmHRua3mU3&format=png&color=000000" alt="icon">
 </div>
+
+<h1 align="">Portfolio Plus | Django CV Page</h1>
 
 *  [TO DO](#hash-todo)
 *  [Purpose](#hash-purpose)

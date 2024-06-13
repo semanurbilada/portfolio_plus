@@ -132,6 +132,6 @@ docker-compose run app python3 manage.py migrate
 docker-compose run app python3 manage.py createsuperuser
 ```
 
-## Licence
+## :hash: Licence
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/semanurbilada/portfolio_plus?tab=MIT-1-ov-file#readme) file for details.
